@@ -2,7 +2,7 @@
   "expo": {
     "name": "CancioneroLyV",
     "slug": "CancioneroLyV",
-    "version": "1.0.0",
+    "version": "0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,20 +11,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.martinreus.CancioneroLyV"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#3b82f6"
+      },
+      "package": "com.martinreus.CancioneroLyV"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dc422027-125c-460e-910a-9da5071a6dcb"
+      }
     }
   }
 }
