@@ -1,8 +1,9 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, StyleSheet } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./src/views/HomeScreen";
 import CancionScreen from "./src/views/CancionScreen";
 import { listaNombres } from "./src/canciones.json";
+import Colors from "./src/colors.js";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,7 @@ export default function App() {
           component={HomeScreen}
           options={{
             title: "Cancionero Luz y Vida",
-            headerStyle: { backgroundColor: "#3b82f6" },
+            headerStyle: { backgroundColor: Colors.header },
             headerTintColor: "white",
             headerTitleStyle: {
               fontWeight: "bold",
@@ -30,7 +31,7 @@ export default function App() {
               component={CancionScreen}
               options={{
                 title: cancion.nombre,
-                headerStyle: { backgroundColor: "#3b82f6" },
+                headerStyle: { backgroundColor: Colors.header },
                 headerTintColor: "white",
                 headerTitleStyle: {
                   fontWeight: "bold",

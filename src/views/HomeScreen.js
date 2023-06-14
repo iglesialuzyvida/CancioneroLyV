@@ -2,14 +2,16 @@ import { StatusBar } from "expo-status-bar";
 import { FlatList, Text, View, StyleSheet, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { listaNombres } from "../canciones.json";
+import { useNavigation } from "@react-navigation/native";
 
-const NombreCancion = ({ nav, cancion }) => {
+const NombreCancion = ({ cancion }) => {
+  const navigation = useNavigation();
   return (
     <View>
       <Pressable
         style={styles.button}
         onPress={() =>
-          nav.navigate(cancion.screenName, { idCancion: cancion.id })
+          navigation.navigate(cancion.screenName, { idCancion: cancion.id })
         }
       >
         <Text style={styles.nombre}>{cancion.nombre}</Text>
