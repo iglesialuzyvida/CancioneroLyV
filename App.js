@@ -1,9 +1,10 @@
-import { NavigationContainer, StyleSheet } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./src/views/HomeScreen";
 import CancionScreen from "./src/views/CancionScreen";
-import { listaNombres } from "./src/canciones.json";
+import HeaderCanciones from "./src/components/HeaderCanciones";
 import Colors from "./src/colors.js";
+import { listaNombres } from "./src/canciones.json";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,12 +31,8 @@ export default function App() {
               name={cancion.screenName}
               component={CancionScreen}
               options={{
-                title: cancion.nombre,
-                headerStyle: { backgroundColor: Colors.header },
-                headerTintColor: "white",
-                headerTitleStyle: {
-                  fontWeight: "bold",
-                },
+                headerStyle: { backgroundColor: Colors.header }, //"#3b82f6" },
+                headerTitle: () => <HeaderCanciones id={cancion.id} />,
               }}
             />
           );

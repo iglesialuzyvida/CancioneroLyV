@@ -1,10 +1,7 @@
-import { useEffect } from "react";
 import { View, ScrollView, Text, StyleSheet } from "react-native";
+import FooterCanciones from "../components/FooterCanciones";
 import { listaLetras } from "../canciones.json";
 import Colors from "../colors.js";
-import { Pressable } from "@react-native-material/core";
-import { AntDesign } from "@expo/vector-icons";
-import { openURL } from "expo-linking";
 
 const CancionScreen = ({ navigation, route }) => {
   // route tiene un route.navigation, para seguir navegando y route.params
@@ -13,25 +10,14 @@ const CancionScreen = ({ navigation, route }) => {
   const { letra, linkYT } = listaLetras.find(
     (cancion) => cancion.id == idCancion
   );
-  useEffect(() => {
-    navigation.setOptions({
-      headerRight: () => (
-        <View style={styles.youtubeButton}>
-          <Pressable
-            // style={styles.youtubeButton}
-            onPress={() => openURL(linkYT)}
-          >
-            <AntDesign name="youtube" size={32} color="red" />
-          </Pressable>
-        </View>
-      ),
-    });
-  }, [navigation]);
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.text}>{letra}</Text>
-    </ScrollView>
+    <>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.text}>{letra}</Text>
+      </ScrollView>
+      <FooterCanciones />
+    </>
   );
 };
 
