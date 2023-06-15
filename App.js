@@ -2,6 +2,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./src/views/HomeScreen";
 import CancionScreen from "./src/views/CancionScreen";
+import HeaderCanciones from "./src/components/HeaderCanciones";
+import Colors from "./src/colors.js";
 import { listaNombres } from "./src/canciones.json";
 import HeaderCanciones from "./src/components/HeaderCanciones";
 
@@ -16,7 +18,7 @@ export default function App() {
           component={HomeScreen}
           options={{
             title: "Cancionero Luz y Vida",
-            headerStyle: { backgroundColor: "#3b82f6" },
+            headerStyle: { backgroundColor: Colors.header },
             headerTintColor: "white",
             headerTitleStyle: {
               fontWeight: "bold",
@@ -30,8 +32,8 @@ export default function App() {
               name={cancion.screenName}
               component={CancionScreen}
               options={{
-                headerStyle: { backgroundColor: "white" }, //"#3b82f6" },
-                headerTitle: () => <HeaderCanciones title={cancion.nombre} />,
+                headerStyle: { backgroundColor: Colors.header }, //"#3b82f6" },
+                headerTitle: () => <HeaderCanciones id={cancion.id} />,
               }}
             />
           );

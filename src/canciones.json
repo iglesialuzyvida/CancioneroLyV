@@ -3,17 +3,26 @@
     {
       "id": 0,
       "nombre": "Hay Libertad",
-      "screenName": "hay_libertad"
+      "screenName": "hay_libertad",
+      "linkYT": "https://youtu.be/UdZSJOpPm7I"
     },
     {
       "id": 1,
       "nombre": "El Dios que adoramos",
-      "screenName": "el_dios_que_adoramos"
+      "screenName": "el_dios_que_adoramos",
+      "linkYT": "https://youtu.be/SepTMXM1St8"
     },
     {
       "id": 2,
       "nombre": "Gracia sublime es",
-      "screenName": "gracia_sublime_es"
+      "screenName": "gracia_sublime_es",
+      "linkYT": "https://youtu.be/0pOVNIsyIXM"
+    },
+    {
+      "id": 3,
+      "nombre": "Te Alabaré Mi Buen Jesús",
+      "screenName": "te_alabare_mi_buen_jesus",
+      "linkYT": "https://youtu.be/p0q0S0mU3fQ"
     }
   ],
   "listaLetras": [
@@ -28,6 +37,10 @@
     {
       "id": 2,
       "letra": "Quién rompe el poder del pecado\nSu amor es fuerte y poderoso\nEl rey de gloria, el rey de majestad\n\nConmueve el mundo con Su estruendo\nY nos asombra con maravillas\nEl rey de gloria, el rey de majestad\n\nGracia sublime es\nPerfecto es Tu amor\nTomaste mi lugar\nCargaste Tú mi cruz\n\nTu vida diste ahí\nY ahora libre soy\nJesús, te adoro\nPor lo que hiciste en mí, ¡wo-oh!\n\nPusiste en orden todo el caos\nNos adoptaste como Tus hijos\nEl rey de gloria, el rey de majestad, ¡oh!\n\nEl que gobierna con Su justicia\nY resplandece con Su belleza\nEl rey de gloria, el rey de majestad, ¡wo-oh!\n\nGracia sublime es\nPerfecto es Tu amor\nTomaste mi lugar\nCargaste Tú mi cruz\n\nTu vida diste ahí\nY ahora libre soy\nJesús, te adoro\nPor lo que hiciste en mí\n\nDigno es el Cordero de Dios\nDigno es el rey que la muerte venció\nDigno es el Cordero de Dios\nDigno es el rey que la muerte venció\n\nDigno es el Cordero de Dios\nDigno es el rey que la muerte venció\nDigno es el Cordero de Dios\n¡Digno! ¡Digno!\n\nGracia sublime es\nPerfecto es tu amor\nTomaste mi lugar\nCargaste Tú mi cruz\n\nTu vida diste ahí\nY ahora libre soy\nJesús, te adoro\nPor lo que hiciste en mí\n\nGracia sublime es\nPerfecto es Tu amor\nTomaste mi lugar\n(Cargaste Tú mi cruz)\n\nTu vida diste ahí\nY ahora libre soy\nJesús, te adoro\nPor lo que hiciste en mí"
+    },
+    {
+      "id": 3,
+      "letra": "Eres tú la única razón\nDe mi adoración oh Jesús\nEres tú la esperanza que\nAnhelé tener oh Jesús\n\nConfié en ti me has ayudado\nTu salvación me has regalado\nHoy hay gozo en mi corazón\nCon mi canto te alabaré\n\nTe alabaré, te glorificaré\nTe alabaré, mi buen Jesús\nTe alabaré, te glorificaré\nTe alabaré, mi buen Jesús\n\nEres tú la única razón\nDe mi adoración oh Jesús\nEres tú la esperanza que\nAnhelé tener oh Jesús\n\nConfié en ti me has ayudado\nTu salvación me has regalado\nHoy hay gozo en mi corazón\nCon mi canto te alabaré\n\nTe alabaré, te glorificaré\nTe alabaré mi buen Jesús\nTe alabaré, te glorificaré\nTe alabaré mi buen Jesús\n\nEn todo tiempo te alabaré\nEn todo tiempo te adoraré\n\nTe alabaré, te glorificaré\nTe alabaré mi buen Jesús\nTe alabaré, te glorificaré\nTe alabaré mi buen Jesús"
     }
   ]
 }
